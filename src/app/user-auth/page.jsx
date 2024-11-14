@@ -28,14 +28,14 @@ const page = () => {
   return (
     <div className="flex min-h-screen bg-gradient-to-r from-blue-100 to-purple-200 dark:from-gray-900 dark:to-gray-800 ">
         {isLoading && <Loader/>}
-      <div className="hidden w-1/2 bg-gray-100 lg:block">
-        <Image
+      <div className="hidden w-1/2 bg-gradient-to-r from-blue-100 to-purple-200 dark:from-gray-900 dark:to-gray-800">
+        {/* <Image
           src="/images/meet_image.jpg"
           width={1080}
           height={1080}
           alt="login image"
           className="object-cover w-full h-full"
-        />
+        /> */}
       </div>
 
       <div className="flex flex-col justify-center w-full p-8 lg:w-1/2 ">
