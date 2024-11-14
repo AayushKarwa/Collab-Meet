@@ -13,7 +13,7 @@ export async function middleware(req){
 
     //if user try to acess home page without login
     if(!token && req.nextUrl.pathname !== '/user-auth'){
-        return NextResponse.redirect(new URL('/',req.url));
+        return NextResponse.redirect(new URL('/user-auth',req.url));
     }
 
     return NextResponse.next();
